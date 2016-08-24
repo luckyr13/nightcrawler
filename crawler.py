@@ -1,6 +1,6 @@
 """
     +===================
-    + NightCrawler v1.0
+    + NightCrawler v1.1
     +===================
     
     @date: 22AUG2016
@@ -15,6 +15,7 @@ import urlparse
 import time
 
 # Change this value for the web page url that you want to crawl
+# Don't forget the "http://" part
 ROOT = "http://www.google.com/"
 # Time out time for http connections
 TIMEOUT = (5, 10)
@@ -64,14 +65,13 @@ class Crawler(object):
     """
         Main crawler object
     """
-    CHILD_LINKS = []
-    BROKEN_LINKS = []
-    EMAIL_ACCOUNTS = []
-    TEL_NUMS = []
-    
+
     def __init__(self, root):
         self.base_url = self.parse_base_url(root)
         self.CHILD_LINKS = [self.base_url]
+        self.BROKEN_LINKS = []
+        self.EMAIL_ACCOUNTS = []
+        self.TEL_NUMS = []
         
     def parse_base_url(self, url):
         """
@@ -227,7 +227,8 @@ class Crawler(object):
             # Black List
             # Skip binary files (we only want web pages for now)
             IN_BLACK_LIST = False
-            for ext_path in [".jpg", ".jpeg", ".pdf", ".doc", ".xl"]:
+            for ext_path in [".jpg", ".jpeg", ".pdf", ".doc", ".xl",
+                             ".png", ".gif"]:
                 if ext_path in tmp_path:
                     IN_BLACK_LIST = True
 
