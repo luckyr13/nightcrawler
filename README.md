@@ -1,5 +1,5 @@
 # NightCrawler v1.1
-## NightCrawler Web Scrapper
+## NightCrawler Web Scraper
 
 NightCrawler is a tool developed on Python 2.7 that we can use against our own web pages for footprinting.
 
