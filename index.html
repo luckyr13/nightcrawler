@@ -23,26 +23,26 @@
 <a id="nightcrawler-v11" class="anchor" href="#nightcrawler-v11" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NightCrawler v1.1</h1>
 
 <h2>
-<a id="nightcrawler-web-scrapper" class="anchor" href="#nightcrawler-web-scrapper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NightCrawler Web Scrapper</h2>
+<a id="nightcrawler-web-scraper" class="anchor" href="#nightcrawler-web-scraper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NightCrawler Web Scraper</h2>
 
-<p>NightCrawler is a tool developed on Python 2.7 that we can use against our own web pages for footprinting.</p>
+<p>NightCrawler is a tool developed on Python 2.7 that we can use as a footprinting tool against our own web pages.</p>
 
 <p>The tool tries to fetch:</p>
 
 <ul>
-<li>A list [CHILD_LINKS] with all the pages linked from a ROOT node</li>
+<li>Enumarates and saves on a list [CHILD_LINKS] all the pages linked from a ROOT node and under the same ROOT domain</li>
 <li>A list [EMAIL_ACCOUNTS] with all the email accounts that the parser founds on the visited pages</li>
-<li>An a list [TEL_NUMS] with all the telephone numbers that the parser founds</li>
+<li>A list [TEL_NUMS] with all the telephone numbers that the parser founds</li>
 </ul>
 
-<p>NightCrawler is Object Oriented (a Class), so you can reuse the code for make a better (more interesting?) program. The code at this point only follows links to web pages, not to binary files, but you can reuse the data that the "crawler" object generates through the Class fields: CHILD_LINKS, BROKEN_LINKS, EMAIL_ACCOUNTS, TEL_NUMS</p>
+<p>NightCrawler is Object Oriented (a Class), so you can reuse the code for make a better (more interesting?) program. The code at this point only follows links to web pages, not to binary files, but you can reuse the data that the "crawler" object generates through the Class attributes: CHILD_LINKS, BROKEN_LINKS, EMAIL_ACCOUNTS, TEL_NUMS</p>
 
 <p>Any improvement and comments to the code would be apreciate it.</p>
 
 <p>Usage:</p>
 
 <ul>
-<li>You only need to change on line 18 the base url parameter for ROOT variable:</li>
+<li>You only need to change on line 18 the base url parameter named ROOT:</li>
 </ul>
 
 <p>ROOT = "<a href="http://www.google.com/">http://www.google.com/</a>"</p>
