@@ -14,7 +14,7 @@ NightCrawler is Object Oriented (a Class), so you can reuse the code for make a 
 Any improvement and comments to the code would be apreciate it.
 
 Usage:
-- You only need to change on line 18 the base url parameter for ROOT variable:
+- You only need to change on line 18 the base url parameter named ROOT:
 
 ROOT = "http://www.google.com/"
 
