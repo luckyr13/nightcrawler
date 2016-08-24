@@ -20,6 +20,8 @@ ROOT = "http://www.google.com/"
 # Time out time for http connections
 TIMEOUT = (5, 10)
 
+VERSION = 1.1
+
 class Parse(HTMLParser):
     """
         Parse HTML text
@@ -151,7 +153,7 @@ class Crawler(object):
         """
         
         time_start = time.time()
-        print "NightCrawler v1.0"
+        print "NightCrawler v%s" % (VERSION,)
         print "Please stand by ...\n"
         print "BASE URL: %s" % (self.base_url)
 
@@ -279,7 +281,3 @@ if __name__ == "__main__":
         crawler.start()
     except Exception as err:
         print "Ups: ", err
-        
-        
-
-
