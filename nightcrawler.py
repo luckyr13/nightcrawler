@@ -201,7 +201,7 @@ class Crawler(object):
         
         urls = []
         data = []
-        print '+ Fetch childs from Base url:', prep_url
+        print '+ Fetch children from Base url:', prep_url
 
         # Parse the HTML code
         parser = Parse()
