@@ -1,4 +1,4 @@
-# NightCrawler v1.2
+# NightCrawler v1.5
 ## NightCrawler Web Scraper
 
 NightCrawler is a tool developed on Python 2.7 that we can use as a footprinting tool against our own web pages.
@@ -18,6 +18,10 @@ Usage:
 
 ROOT = "http://www.google.com/"
 
+Now just run the script: nightcrawler.py
+
 Requires:
 - Module Requests: HTTP for Humans (can be installed with the "pip" command) http://docs.python-requests.org/en/master/
 
+Experimental:
+ 	- Added nc_gui.py as a GUI for nightcrawler.py (Not finished yet!)
